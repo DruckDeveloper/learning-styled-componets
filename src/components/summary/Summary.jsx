@@ -3,12 +3,12 @@ import { SkillsList } from '../skills-list/SkillsList'
 
 const SummaryContent = styled('div')`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 
   & button {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     margin: 2rem 0;
     width: 85%;
     border-radius: 2rem;
@@ -18,6 +18,7 @@ const SummaryContent = styled('div')`
     transition: background 0.5s ease-in-out;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
   }
 `
 

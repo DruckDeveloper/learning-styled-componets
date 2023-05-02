@@ -9,22 +9,22 @@ const ListStyled = styled('ul')`
   width: 85%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 `
 
 const SkillsList = () => {
   return (
     <ListStyled>
-      <SkillItem name='Reaction' score='80 / 100'>
+      <SkillItem name='Reaction' score='80 / 100' type='primary'>
         <ReactionIcon />
       </SkillItem>
-      <SkillItem name='Memory' score='92 / 100'>
+      <SkillItem type='secondary' name='Memory' score='92 / 100'>
         <MemoryIcon />
       </SkillItem>
-      <SkillItem name='Verbal' score='61 / 100'>
+      <SkillItem type='tertiary' name='Verbal' score='61 / 100'>
         <VerbalIcon />
       </SkillItem>
-      <SkillItem name='Visual' score='72 / 100'>
+      <SkillItem type='quaternary' name='Visual' score='72 / 100'>
         <VisualIcon />
       </SkillItem>
     </ListStyled>

@@ -12,6 +12,11 @@ const GlobalStyles = createGlobalStyle`
     --Orangey-yellow: hsl(39, 100%, 56%);
     --Green-teal: hsl(166, 100%, 37%);
     --Cobalt-blue: hsl(234, 85%, 45%);
+    // Opacity
+    --Light-red-opacity: hsla(0, 100%, 67%, 0.2);
+    --Orange-yellow-opacity: hsla(39, 100%, 56%, 0.2);
+    --Green-teal-opacity: hsla(166, 100%, 37%, 0.2);
+    --Cobalt-blue-opacity: hsla(234, 85%, 45%, 0.2);
     // Neutral 
     --White: hsl(0, 0%, 100%);
     --Pale-blue: hsl(221, 100%, 96%);
@@ -152,16 +157,21 @@ const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
+
   #root {
     min-height: 100vh;
+    
+    @media (min-width: 900px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
   body {
     font-family: 'Hanken Grotesk', sans-serif;
 
     @media (min-widtth: 900px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 2rem;
     }
   }

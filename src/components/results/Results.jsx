@@ -6,8 +6,8 @@ const ResultsStyled = styled('div')`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
+  padding: 2rem 0;
   text-align: center;
   background: linear-gradient(180deg, var(--Light-slate-blue) 0%, var(--Light-royal-blue) 80%, var(--Violet-blue) 100%);
   gap: 1rem;
